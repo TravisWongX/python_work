@@ -9,5 +9,26 @@ python 脚本名
 2. 写个爬虫
 3. 开发一个桌面程序
 
+- 变量名
+> 应使用小写的 Python 变量名。在变量名中使用大写字母虽然不会导致错误，但避免使用大写字母是个不错的主意。name_length用下划线连接
 
+- 建议
+> 在做每个练习时，都编写一个独立的程序。保存每个程序时，使用符合标准 Python 约定的文件名：使用小写字母和下划线，如 simple_message.py 和 simple_messages.py 。
+
+- 字符串
+```python
+# 字符串方法
+
+name = "michaeL jordAn"
+print(name.title()) # 首字母大写
+print(name.upper()) # 大写
+print(name.lower()) # 小写
+
+# + 拼接字符串
+first_name = "ada"
+last_name = "lovelace"
+full_name = first_name + ' ' + last_name
+message = "Hello, " + full_name.title() + "!"
+print(message)
+```
 
