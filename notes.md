@@ -30,5 +30,16 @@ last_name = "lovelace"
 full_name = first_name + ' ' + last_name
 message = "Hello, " + full_name.title() + "!"
 print(message)
+
+print("\t\n") # \t制表 \n换行
+print('\'') # \' 单引号转义
+
+name = "   pineapple  "
+name.lstrip() # 去掉左边空格，但不会改变字符串本身
+name.rstrip() # 去掉右边空格
+name.strip() # 去掉两边空格
+name = name.strip() # 只有重新赋值才会改变字符串
+
+
 ```
 
