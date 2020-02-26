@@ -39,7 +39,34 @@ name.lstrip() # 去掉左边空格，但不会改变字符串本身
 name.rstrip() # 去掉右边空格
 name.strip() # 去掉两边空格
 name = name.strip() # 只有重新赋值才会改变字符串
-
-
 ```
+
+- 数字
+```python
+2 ** 3 # 乘方
+0.2 + 0.1 # 0.30000000000000004
+3 / 2 # 1.5 Python3中除法得浮点数
+
+age = 23
+message = "Happy " + str(age) + "rd Birthday!"
+# str()将数字转为字符串，Python中数字不能直接与字符串拼接，JS可以
+```
+
+- 注释
+```python
+# 这是一行注释
+# 注释用来说明这段代码的用途
+# 注释可以备注你的名字和日期
+```
+
+- Python之禅
+```Python
+# 在解释器窗口输入,就可以看到Zen of Python
+>>> import this
+
+now is better than never
+# 你可以将余生都用来学习 Python 和编程的纷繁难懂之处，但这样你什么项目都完不成。不要企图编写完美无缺的代码；先编写行之有效的代码，再决定是对其做进一步改进，还是转而去编写新代码。
+```
+
+
 
