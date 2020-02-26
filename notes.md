@@ -68,5 +68,12 @@ now is better than never
 # 你可以将余生都用来学习 Python 和编程的纷繁难懂之处，但这样你什么项目都完不成。不要企图编写完美无缺的代码；先编写行之有效的代码，再决定是对其做进一步改进，还是转而去编写新代码。
 ```
 
-
+- 列表list 
+```python
+bicycles = ['trek', 'cannondale', 'redline', 'specialized'] 
+print(bicycles)
+print(bicycles[0]) # 索引从0开始
+print(bicycles[-1]) # 访问倒数第一个元素，-2则倒数第二个，以此类推
+ 
+```
 
