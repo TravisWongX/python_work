@@ -4,3 +4,6 @@ print(bicycles[0])
 print(bicycles[0].title())
 print(bicycles[-1])
 print(bicycles[-2])
+
+message = "My first bicycle was a " + bicycles[0].title() + "."
+print(message)
