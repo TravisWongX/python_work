@@ -74,6 +74,18 @@ bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles)
 print(bicycles[0]) # 索引从0开始
 print(bicycles[-1]) # 访问倒数第一个元素，-2则倒数第二个，以此类推
- 
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+motorcycles[0] = 'ducati' # 修改元素
+motorcycles.append('honda') # 末尾添加元素
+motorcycles.insert(1, 'BMW') # 在指定位置插入元素，其他元素右移
+del motorcycles[1] # 在指定位置删除元素
+popped_motorcycle = motorcycles.pop() # 删除最后一个元素，并返回其值
+popped_motorcycle2 = motorcycles.pop(1) # 删除指定元素，并返回其值 
+too_expensive = 'ducati'
+motorcycles.remove(too_expensive) # 按值删除，只删除第一个与值匹配的, 且区分大小写
+# Python的变量名区分大小写
+
+
 ```
 
