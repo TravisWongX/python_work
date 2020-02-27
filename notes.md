@@ -86,6 +86,16 @@ too_expensive = 'ducati'
 motorcycles.remove(too_expensive) # 按值删除，只删除第一个与值匹配的, 且区分大小写
 # Python的变量名区分大小写
 
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort() # 按字母顺序由小到大排, 会改变list本身
+cars.sort(reverse=True) # 按字母顺序反向排序
 
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print(sorted(cars, reverse=True)) # 用sorted函数，不会改变list本身
+print(sorted(cars))
+print(cars)
+
+cars.reverse() # 反转列表
+print(len(cars)) # 计算列表长度
 ```
 
