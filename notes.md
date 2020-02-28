@@ -105,5 +105,20 @@ magicians = ['alice', 'david', 'carolina']
 for magician in magicians:
     print(magician) # 缩进4空格不是必须的，缩进1个空格也不会报错
     print("I can't wait to see your next trick, " + magician.title() + ".\n") # 缩进要与上一句保持一致
+
+for value in range(1,6): # range()函数生成数字
+    print(value)
+
+numbers = list(range(1,6)) # list()函数生成数字列表
+print(numbers)
+even_numbers = list(range(2,11,2)) # 第三个参数指定步长
+print(even_numbers)
+
+min(numbers) # min()函数求列表中最小值
+max(numbers) # max()函数求列表中最大值
+sum(numbers) # sum()函数求列表和
+
+squares2 = [value**3 for value in range(1,11)] # 用列表解析创建数字列表
+print(squares2)
 ```
 
