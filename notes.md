@@ -99,3 +99,11 @@ cars.reverse() # 反转列表
 print(len(cars)) # 计算列表长度
 ```
 
+- 循环
+```python
+magicians = ['alice', 'david', 'carolina']
+for magician in magicians:
+    print(magician) # 缩进4空格不是必须的，缩进1个空格也不会报错
+    print("I can't wait to see your next trick, " + magician.title() + ".\n") # 缩进要与上一句保持一致
+```
+
