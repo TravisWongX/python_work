@@ -122,3 +122,15 @@ squares2 = [value**3 for value in range(1,11)] # 用列表解析创建数字列�
 print(squares2)
 ```
 
+- 切片slice
+```python
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print(players[0:3]) # 与函数 range() 一样， Python 在到达你指定的第二个索引前面的元素后停止
+print(players[:4]) # 从索引0到索引3
+print(players[2:]) # 从索引2到最后
+print(players[-3:]) # 倒数3个
+
+for player in players[:3]: # 遍历切片Looping through a slice
+    print(player.title())
+```
+
