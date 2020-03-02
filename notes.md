@@ -132,5 +132,9 @@ print(players[-3:]) # 倒数3个
 
 for player in players[:3]: # 遍历切片Looping through a slice
     print(player.title())
+
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:] # 复制列表/切片
+# friend_foods = my_foods会指向同一个列表
 ```
 
