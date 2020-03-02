@@ -156,4 +156,14 @@ print(dimensions[-1])
 > 要将程序的不同部分分开，可使用空行
 > https://www.python.org/dev/peps/pep-0008/
 
+- if
+```python
+cars = ['audi', 'bmw', 'subaru', 'toyota']
+
+for car in cars:
+    if car == 'bmw':  # ==区分大小写
+        print(car.upper())
+    else:
+        print(car.title())
+```
 
