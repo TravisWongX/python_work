@@ -6,3 +6,10 @@ print('alber' +    # 不报错
        'einstein')
 
 ```
+
+2. for loop的变量名
+```python
+foods = ("egg", "steak", "stew", "potato", "cumin")
+for foods in foods:  # 这样也能正常执行
+    print(foods)
+```

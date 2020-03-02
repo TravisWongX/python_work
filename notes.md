@@ -138,3 +138,16 @@ friend_foods = my_foods[:] # 复制列表/切片
 # friend_foods = my_foods会指向同一个列表
 ```
 
+- 元组 Tuple
+```python
+#  Python 将不能修改的值称为 不可变的 ，而不可变的列表被称为 元组Tuple
+
+dimensions = (200, 50) # 定义
+print(dimensions[0]) # 像列表一样访问
+print(dimensions[-1])
+
+# tuple不可以append, insert等修改操作
+
+```
+
+
