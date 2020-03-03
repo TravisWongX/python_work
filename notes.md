@@ -165,5 +165,10 @@ for car in cars:
         print(car.upper())
     else:
         print(car.title())
+
+
+banned_users = ['andrew', 'carolina', 'david']
+'andrew' in banned_users # 判断是否在列表内
+'dav' not in banned_users # 是否不在
 ```
 
