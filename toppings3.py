@@ -1,5 +1,5 @@
-availbale_toppings = ['mushrooms', 'olives', 'green peppers',
-                      'pepperoni', 'pineapple', 'extra cheese']
+availbale_toppings = ('mushrooms', 'olives', 'green peppers',
+                      'pepperoni', 'pineapple', 'extra cheese')
 requested_toppings = ['mushrooms', 'fresh fries', 'extra cheese']
 
 for requested_topping in requested_toppings:
