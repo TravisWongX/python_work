@@ -178,6 +178,10 @@ elif age < 18: # elif
 else:
     price = 10
 
+requested_toppings = []
+if requested_toppings: # 判断列表是否为空
+    do something...
+
 
 ```
 
