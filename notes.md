@@ -182,6 +182,17 @@ requested_toppings = []
 if requested_toppings: # 判断列表是否为空
     do something...
 
+```
 
+- 字典dictionary
+> 理解字典后，你就能够更准确地为各种真实物体建模。
+```python
+alien_0 = {'color': 'green', 'points': 5} # 键-值对
+print(alien_0['color']) # 通过键访问值
+print(alien_0['points'])
+
+alien_0 = {} # 空字典
+alien_0['color'] = 'green' # 添加新键值对
+alien_0['points'] = 5
 ```
 
