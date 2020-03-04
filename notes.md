@@ -170,5 +170,14 @@ for car in cars:
 banned_users = ['andrew', 'carolina', 'david']
 'andrew' in banned_users # 判断是否在列表内
 'dav' not in banned_users # 是否不在
+
+if age < 4:
+    price = 0 # 移到:后面也不会报错
+elif age < 18: # elif
+    price = 5
+else:
+    price = 10
+
+
 ```
 
