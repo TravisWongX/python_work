@@ -192,7 +192,20 @@ print(alien_0['color']) # 通过键访问值
 print(alien_0['points'])
 
 alien_0 = {} # 空字典
-alien_0['color'] = 'green' # 添加新键值对
+alien_0['color'] = 'green' # 添加/修改新键值对
 alien_0['points'] = 5
+
+del alien_0['color'] # 删除指定的键
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',  # 分多行，最后一行逗号可加可不加
+    }
+
+print("Sarah's favorite language is " + 
+    favorite_languages['sarah'].title() +
+    ".")
 ```
 
