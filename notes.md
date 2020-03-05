@@ -207,5 +207,20 @@ favorite_languages = {
 print("Sarah's favorite language is " + 
     favorite_languages['sarah'].title() +
     ".")
+
+for name, language in favorite_languages.items(): # 遍历键值对
+    print(name.title() + "'s favorite language is " + 
+        language.title() + ".")
+
+print(favorite_languages.items())  # items()方法得到键值对list
+# dict_items([('jen', 'python'), ('sarah', 'c'), ('edward', 'ruby'), ('phil', 'python')])
+
+for name in favorite_languages.keys(): # keys()方法遍历所有的键
+    print(name.title())
+
+for name in favorite_languages: # keys()方法可以省去，默认调用
+    print(name.title())
+
+
 ```
 
