@@ -97,6 +97,7 @@ print(cars)
 
 cars.reverse() # 反转列表
 print(len(cars)) # 计算列表长度
+# len同样可以计算字典的长度
 ```
 
 - 循环
@@ -108,7 +109,7 @@ for magician in magicians:
 
 for value in range(1,6): # range()函数生成数字
     print(value)
-
+# range(30)可以只给一个参数，表示
 numbers = list(range(1,6)) # list()函数生成数字列表
 print(numbers)
 even_numbers = list(range(2,11,2)) # 第三个参数指定步长
@@ -226,5 +227,20 @@ for language in favorite_languages.values(): # values()访问字典的值
 
 for language in set(favorite_languages.values()): # set()集合，每个值必须唯一
     print(language)
+
+
+# 嵌套
+
+aliens = []
+
+for alien_number in range(30): # 创建30个相同的字典存储到列表中
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+
+for alien in aliens[:5]: # 打印前5个字典
+    print(alien)
+print('...')
+
+print("Total number of aliens: " + str(len(aliens)))
 ```
 
