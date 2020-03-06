@@ -242,5 +242,17 @@ for alien in aliens[:5]: # 打印前5个字典
 print('...')
 
 print("Total number of aliens: " + str(len(aliens)))
+
+
+pizza = {
+    'crust': 'think',
+    'toppings': ['mushrooms', 'extra cheese'], # 字典中存储列表
+}
+
+print("You ordered a " + pizza['crust'] + "-crust pizza " + 
+    "with the following toppings:")
+
+for topping in pizza['toppings']: # 访问字典中的列表
+    print("\t" + topping)
 ```
 
