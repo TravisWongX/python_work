@@ -221,6 +221,10 @@ for name in favorite_languages.keys(): # keys()方法遍历所有的键
 for name in favorite_languages: # keys()方法可以省去，默认调用
     print(name.title())
 
+for language in favorite_languages.values(): # values()访问字典的值
+    print(language.title())
 
+for language in set(favorite_languages.values()): # set()集合，每个值必须唯一
+    print(language)
 ```
 
