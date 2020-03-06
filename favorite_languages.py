@@ -20,3 +20,13 @@ for name in favorite_languages.keys():
 
 for name in favorite_languages: # keys()方法可以省去，默认调用
     print(name.title())
+
+friends = ['phil', 'sarah']
+for name in favorite_languages.keys():
+    print(name.title())
+
+    if name in friends:
+        print(" Hi" + name.title() + 
+            ", I see your favorite language is " + 
+            favorite_languages[name].title() + "!")
+
