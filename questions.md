@@ -19,3 +19,6 @@ for foods in foods:  # 这样也能正常执行
 alien_0 = {'color': 'green', 'points': 5, 'color': 'red'}
 alien_0['color'] # red
 ```
+4. 第6-9题
+
+5. 
