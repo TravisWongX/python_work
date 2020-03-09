@@ -287,5 +287,11 @@ name = input(prompt) # 获取用户输入， 但得到的是字符串
 height = input("How tall are you, in inches?")
 height = int(height) # int()将字符串转为整数， 不能转换浮点数形式的字符串，如'23.523'
 
+
+if number % 2 == 0: # % 求模运算，得余数
+    print("\nThe number " + str(number) + " is even.")
+
+# a multiple(倍数) of 10
+
 ```
 
