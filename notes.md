@@ -282,6 +282,10 @@ for username, user_info in users.items():
 ```python
 prompt = "If you tell us who you are, we can personalize the messages you see."
 prompt += "\nWhat is your first name?"
-name = input(prompt) # 获取用户输入
+name = input(prompt) # 获取用户输入， 但得到的是字符串
+
+height = input("How tall are you, in inches?")
+height = int(height) # int()将字符串转为整数， 不能转换浮点数形式的字符串，如'23.523'
+
 ```
 
