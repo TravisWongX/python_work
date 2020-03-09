@@ -278,3 +278,10 @@ for username, user_info in users.items():
     print("\tLocation: " + location.title())
 ```
 
+- 用户输入
+```python
+prompt = "If you tell us who you are, we can personalize the messages you see."
+prompt += "\nWhat is your first name?"
+name = input(prompt) # 获取用户输入
+```
+
