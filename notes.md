@@ -295,3 +295,20 @@ if number % 2 == 0: # % 求模运算，得余数
 
 ```
 
+- while()循环
+```python
+active = True
+while active:
+    message = input(prompt)
+    
+    if message == 'quit':
+        active = False # 使用flag控制循环是否结束
+    else:
+        print(message)
+
+# break退出当前循环
+# continue 忽略余下代码
+
+# 如果程序陷入无限循环，可按 Ctrl + C
+
+```
