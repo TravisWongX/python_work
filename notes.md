@@ -331,4 +331,8 @@ def describe_pet(animal_type, pet_name):
 # 位置实参，按形参顺序赋值
 describe_pet('hamster', 'harry') 
 
+# 关键字实参，可任意顺序
+describe_pet(pet_name='harry', animal_type='hamster')
+
+def describe_pet(animal_type, pet_name='dog'): # 给形参指定默认值, 必须放最后
 ```
