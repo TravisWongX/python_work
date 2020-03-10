@@ -312,6 +312,23 @@ while active:
 # 如果程序陷入无限循环，可按 Ctrl + C
 
 # 在 for 循环中不应修改列表，否则将导致 Python 难以跟踪其中的元素。要在遍历列表的同时对其进行修改，可使用 while 循环
+```
 
+- 函数
+```python
+def greet_user(username): # username 形参(parameter)
+    """显示简单的问候语""" # 文档字符串(docstring) 描述函数用来做什么的
+    print("Hello!")
+
+greet_user('Jesse') # 调用函数 , 'Jesse' 实参(argument)
+
+
+def describe_pet(animal_type, pet_name):
+    """显示宠物信息"""
+    print("\nI have a " + animal_type + ".")
+    print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+
+# 位置实参，按形参顺序赋值
+describe_pet('hamster', 'harry') 
 
 ```
