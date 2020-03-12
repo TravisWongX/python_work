@@ -354,4 +354,27 @@ print(musician)
 # 每个函数都应只负责一项具体的工作
 
 magicians_temp = make_great(magicians[:]) # 实参传递list的副本
+
+
+def make_pizza(*toppings): # 空元组，接受任意实参
+    """打印顾客点的所有配料"""
+    print(toppings)
+
+make_pizza('pepperoni')
+make_pizza('mushrooms', 'green peppers', 'extra cheese')
+
+def build_profile(first, last, **user_info): # **空字典，接受任意个关键字实参
+    """创建一个字典，其中包含我们知道的有关用户的一切"""
+    profile = {}
+    profile['first_name'] = first
+    profile['last_name'] = last
+    for key, value in user_info.items():
+        profile[key] = value
+    return profile
+
+user_profile = build_profile('albert', 'einstein',
+                              location='princeton',
+                              field='physics')
+
+print(user_profile)
 ```
