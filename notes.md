@@ -350,4 +350,8 @@ print(musician)
 
 musician = get_formatted_name('jimi', 'hooker', 'lee')
 print(musician)
+
+# 每个函数都应只负责一项具体的工作
+
+magicians_temp = make_great(magicians[:]) # 实参传递list的副本
 ```
