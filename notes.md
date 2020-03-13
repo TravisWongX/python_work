@@ -377,4 +377,44 @@ user_profile = build_profile('albert', 'einstein',
                               field='physics')
 
 print(user_profile)
+
+
+# 模块 是扩展名为 .py 的文件
+
+import pizza2 # 导入整个module
+
+pizza2.make_pizza(16, 'pepperoni') # 调用module里的函数
+pizza2.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+
+
+from pizza2 import make_pizza # 从module中导入指定的函数
+
+make_pizza(16, 'pepperoni') # 不需要用.调用函数
+make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+
+# from module_name import function_0, function_1, function_2
+
+from pizza2 import make_pizza as mp # 给导入的函数指定别名
+
+mp(16, 'pepperoni')
+mp(12, 'mushrooms', 'green peppers', 'extra cheese')
+
+import pizza2 as p # 给模块指定别名
+
+p.make_pizza(16, 'pepperoni')
+p.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+
+
+from pizza import * # 导入模块中的所有函数，慎重使用！会使函数相互覆盖
+
+# 函数编写指南
+# 1. 形参、实参中的等号两边不要有空格
+def function_name(parameter_0, parameter_1='default value')
+# 参数过多时，用两个tab(8个空格)缩进
+def function_name(
+        parameter_0, parameter_1, parameter_2,
+        parameter_3, parameter_4, parameter_5):
+    function body...
+
+
 ```
