@@ -418,3 +418,31 @@ def function_name(
 
 
 ```
+
+- 类
+```python
+class Dog():
+    """A simple attempt to model a dog."""
+
+    def __init__(self, name, age): # 初始化属性attribute ， self是要调用自身， 后面是创建实例时要给值的形参
+        """Initialize name and age attributes."""
+        self.name = name # 以 self 为前缀的变量都可供类中的所有方法使用
+        self.age = age
+
+    def sit(self):  # 类中的函数称为 方法 method
+        """Simulate a dog sitting in response to a command."""
+        print(self.name.title() + " is now sitting.")
+
+    def roll_over(self):
+        """Simulate rolling over in response to a command."""
+        print(self.name.title() + " rolled over!")
+
+my_dog = Dog('willie', 6) # 实例化
+
+print("My dog's name is " + my_dog.name.title() + ".") # 访问属性
+print("My dog is " + str(my_dog.age) + "years old.")
+
+my_dog.sit() # 调用方法
+my_dog.roll_over()
+
+```
