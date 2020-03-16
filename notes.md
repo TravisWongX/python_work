@@ -469,4 +469,16 @@ dafu = Restaurant('DaFu', 'Chinese food')
 dafu.describe_restaurant('SiChuan food')
 dafu.open_restaurant()
 
+
+    def __init__(self, make, model, year):
+        """Initialize attributes to describe a car."""
+        self.make = 'Jake' 
+        self.make = make  # 有默认值的属性也可通过形参传值
+        self.make = 'Jake' # 在这个位置会覆盖掉形参传来的值，虽然没什么意义
+        self.model = model 
+        self.year = year
+        self.odometer_reading = 0  # 有默认值的属性可以不通过形参传值
+
+my_new_car = Car('audi', 'a4', 2016)
+my_new_car.odometer_reading = 200 # 给属性重新赋值
 ```
