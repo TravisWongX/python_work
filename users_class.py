@@ -7,6 +7,7 @@ class User():
         self.last_name = last_name
         self.age = age
         self.city = city
+        self.login_attempts = 0
 
     def describe_user(self):
         """Prints a summary of the user's information"""
@@ -18,18 +19,20 @@ class User():
     def greet_user(self):
         """greeting"""
         print("What's up! " + self.first_name.title() + ' ' + self.last_name.title() + '\n')
+    
+    def increment_login_attempts(self):
+        self.login_attempts += 1
 
-user1 = User('Bruce', 'Lee', 35, 'HongKong')
-user2 = User('Michael', 'Jackon', 35, 'USA')
-user3 = User('Jose', 'mourinhio', 55, 'London')
+    def reset_login_attempts(self):
+        self.login_attempts = 0
 
-user1.describe_user()
-user1.greet_user()
+user = User('Big', 'Bear', 25, 'New York')
+print(user.login_attempts)
+for i in range(0, 5):
+    user.increment_login_attempts()
+print(user.login_attempts)
 
-user2.describe_user()
-user2.greet_user()
-
-user3.describe_user()
-user3.greet_user()
+user.reset_login_attempts()
+print(user.login_attempts)
 
 

@@ -5,6 +5,7 @@ class Restaurant():
         """ Initialize name and type attributes."""
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
+        self.number_served = 0
 
     def describe_restaurant(self):
         """Prints two pieces of information"""
@@ -14,17 +15,20 @@ class Restaurant():
     def open_restaurant(self): # self不能省略
         """print a message"""
         print("The restaurant is open.")
+    
+    def set_number_served(self, number):
+        self.number_served = number
 
-dafu = Restaurant('DaFu', 'Chinese food')
-daqing = Restaurant('DaQing', 'Qing food')
-daliang = Restaurant('DaLiang', 'Liang food')
-
-dafu.describe_restaurant()
-daqing.describe_restaurant()
-daliang.describe_restaurant()
+    def increment_number_served(self, increment):
+        self.number_served += increment
 
 
-dafu.open_restaurant()
 
+restaurant = Restaurant('LaiFu', 'Chinese Food')
+print(restaurant.number_served)
+restaurant.set_number_served(2000)
+print(restaurant.number_served)
+restaurant.increment_number_served(500)
+print(restaurant.number_served)
 
     
