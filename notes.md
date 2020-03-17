@@ -481,4 +481,16 @@ dafu.open_restaurant()
 
 my_new_car = Car('audi', 'a4', 2016)
 my_new_car.odometer_reading = 200 # 给属性重新赋值
+
+    def update_odometer(self, mileage): # 定义方法更改属性
+        """  
+        set the odometer reading to the given value.
+        Reject the change if it attempts to roll the odometer back.
+        """  # """内可任意换行"""
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("You can't roll back an odometer!")
+
+
 ```
