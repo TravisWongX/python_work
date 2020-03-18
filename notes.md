@@ -503,6 +503,7 @@ class ElectricCar(Car): # 定义子类subclass/childclass
     """Represent aspects of a car, specific to electric vehicles."""
     def __init__(self, make, model, year):
         """Initialize attributes of the parent class."""
+        # 下面这一句并不是必需的，仍可使用父类的方法，只是属性值不能访问
         super().__init__(make, model, year) # 调用父类(超类superclass)的__init__
         self.battery_size = 70 # 添加子类独有属性
         # self.battery = Battery() # 用其他类的实例做属性
@@ -514,4 +515,41 @@ class ElectricCar(Car): # 定义子类subclass/childclass
 my_tesla.battery.battery_size = 2000 # 访问实例属性内的属性
 
 
+############################
+class Admin(User):
+    def __init__(self, first_name, last_name, age, city, privileges): # 子类专有属性
+        super().__init__(first_name, last_name, age, city)
+        self.privileges = privileges
+        
+    def show_privileges(self):
+        for privilege in self.privileges:
+            print(privilege)
+
+
+admin = Admin('admin', 'X', '20', 'NY', 
+        ['can add post','can delete post','can ban user'] # 可以直接传list，也可以传变量
+        )
+admin.show_privileges()
+
+
+#############################
+class Privileges():
+    def __init__(self, privileges):
+        self.privileges = privileges
+
+    def show_privileges(self):
+        for privilege in self.privileges:
+            print(privilege)
+
+class Admin(User):
+    def __init__(self, first_name, last_name, age, city, my_privileges):
+        super().__init__(first_name, last_name, age, city)
+        self.privileges = Privileges(my_privileges)  # 传递实参
+
+
+admin = Admin('admin', 'X', '20', 'NY',['can add post','can delete post','can ban user'])
+admin.privileges.show_privileges()     
+
+
+# 最重要的不要忘了self.
 ```

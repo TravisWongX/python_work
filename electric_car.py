@@ -30,7 +30,7 @@ class Car():
 class Battery():
     """A simple attempt to model a battery for an electric car."""
 
-    def __init__(self, battery_size=70):
+    def __init__(self, battery_size):
         """Initialize the battery's attributes."""
         self.battery_size = battery_size
 
@@ -38,17 +38,22 @@ class Battery():
         """Print a statement describing the battery size."""
         print("This car has a " + str(self.battery_size) + "-KWh battery.")
 
+    def upgrade_battery(self):
+        if self.battery_size < 85:
+            self.battery_size = 85
+
+
 
     
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles."""
-    def __init__(self, make, model, year):
+    def __init__(self, make, model, year, battery=70):
         """
         Initialize attributes of the parent class.
         Then initialize attributes specific to an electric car.
         """
         super().__init__(make, model, year)
-        self.battery = Battery() # 用其他类的实例做属性
+        self.battery = Battery(battery) # 用其他类的实例做属性
 
     def fill_gas_tank(self):
         print("This car doesn't need a gas tank!")
@@ -70,9 +75,10 @@ class ElectricCar(Car):
 
 my_tesla = ElectricCar('tesla', 'model s', 2016)
 print(my_tesla.get_descriptvie_name())
-my_tesla.battery.battery_size = 2000
 my_tesla.battery.describe_battery()
 # my_tesla.fill_gas_tank()
+my_tesla.get_range()
+my_tesla.battery.upgrade_battery()
 my_tesla.get_range()
 
 benz = Car('Benz', 'c60', '2019')
