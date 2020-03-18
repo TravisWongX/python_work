@@ -505,12 +505,13 @@ class ElectricCar(Car): # 定义子类subclass/childclass
         """Initialize attributes of the parent class."""
         super().__init__(make, model, year) # 调用父类(超类superclass)的__init__
         self.battery_size = 70 # 添加子类独有属性
+        # self.battery = Battery() # 用其他类的实例做属性
 
     def describe_battery(self): # 添加子类独有方法,如果父类有同名方法，也可这样重新定义
         """Print a statement describing the battery size."""
         print("This car has a " + str(self.battery_size) + "-KWh battery.")
 
-    
+my_tesla.battery.battery_size = 2000 # 访问实例属性内的属性
 
 
 ```
