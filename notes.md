@@ -499,9 +499,18 @@ my_new_car.odometer_reading = 200 # 给属性重新赋值
 > 编写类时，并非总是要从空白开始。如果你要编写的类是另一个现成类的特殊版本，可使用 继承 。一个类 继承 另一个类时，它将自动获得另一个类的所有属性和方法；原有的类称为 父类 ，而新类称为 子类 。子类继承了其父类的所有属性和方法，同时还可以定义自己的属性和方法。
 
 ```python
-class ElectricCar(Car): # 定义子类subclass
+class ElectricCar(Car): # 定义子类subclass/childclass
     """Represent aspects of a car, specific to electric vehicles."""
     def __init__(self, make, model, year):
         """Initialize attributes of the parent class."""
         super().__init__(make, model, year) # 调用父类(超类superclass)的__init__
+        self.battery_size = 70 # 添加子类独有属性
+
+    def describe_battery(self): # 添加子类独有方法,如果父类有同名方法，也可这样重新定义
+        """Print a statement describing the battery size."""
+        print("This car has a " + str(self.battery_size) + "-KWh battery.")
+
+    
+
+
 ```
