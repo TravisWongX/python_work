@@ -78,10 +78,10 @@ print(bicycles[-1]) # 访问倒数第一个元素，-2则倒数第二个，以�
 motorcycles = ['honda', 'yamaha', 'suzuki']
 motorcycles[0] = 'ducati' # 修改元素
 motorcycles.append('honda') # 末尾添加元素
-motorcycles.insert(1, 'BMW') # 在指定位置插入元素，其他元素右移
-del motorcycles[1] # 在指定位置删除元素
+motorcycles.insert(1, 'BMW') # 在指定索引位置插入元素，其他元素右移
+del motorcycles[1] # 在指定索引位置删除元素
 popped_motorcycle = motorcycles.pop() # 删除最后一个元素，并返回其值
-popped_motorcycle2 = motorcycles.pop(1) # 删除指定元素，并返回其值 
+popped_motorcycle2 = motorcycles.pop(1) # 删除指定索引位置元素，并返回其值 
 too_expensive = 'ducati'
 motorcycles.remove(too_expensive) # 按值删除，只删除第一个与值匹配的, 且区分大小写
 # Python的变量名区分大小写
@@ -552,6 +552,9 @@ admin.privileges.show_privileges()
 
 
 # 最重要的不要忘了self.
+
+# 类采用驼峰式命名 CamelCaps 每个单词首字母大写
+# 对于每个类，都应紧跟在类定义后面包含一个文档字符串。这种文档字符串简要地描述类的功能，并遵循编写函数的文档字符串时采用的格式约定。每个模块也都应包含一个文档字符串，对其中的类可用于做什么进行描述。
 ```
 
 - 导入类
