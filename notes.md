@@ -574,3 +574,21 @@ class ElectricCar(Car):
 
 # 也可以像导入函数一样用as指定别名
 ```
+
+- python standard library
+```python
+# Python标准库是一组module
+from collections import OrderedDict 
+
+favorite_languages = OrderedDict()
+
+favorite_languages['jen'] = 'python'
+favorite_languages['sarah'] = 'c'
+favorite_languages['edward'] = 'ruby'
+favorite_languages['phil'] = 'python'
+
+
+
+from random import randint # 导入随机函数
+x = randint(1, 6)
+```
