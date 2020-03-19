@@ -553,3 +553,24 @@ admin.privileges.show_privileges()
 
 # 最重要的不要忘了self.
 ```
+
+- 导入类
+```python
+from car import Car # 从module中导入类
+my_new_car = Car('audi', 'a4', 2016)
+
+from car import Car, ElectricCar # 导入多个类
+
+import car  # 导入整个module
+my_bettle = car.Car('volkswagen', 'beetle', 2016)
+print(my_bettle.get_descriptive_name())
+
+from module_name import * # 导入所有类，不推荐
+
+from car import Car # 在module中导入module/calss
+class ElectricCar(Car): 
+    -- snip --
+
+
+# 也可以像导入函数一样用as指定别名
+```

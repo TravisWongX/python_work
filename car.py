@@ -32,11 +32,47 @@ class Car():
         """Add the given amount to the odometer reading."""
         self.odometer_reading += miles
 
+class Battery():
+    """A simple attempt to model a battery for an electric car."""
 
-my_used_car = Car('audi', 'a4', 2016)
-print(my_used_car.get_descriptive_name())
+    def __init__(self, battery_size):
+        """Initialize the battery's attributes."""
+        self.battery_size = battery_size
 
-my_used_car.update_odometer(23500)
-my_used_car.read_odometer()
-my_used_car.increment_odometer(10)
-my_used_car.read_odometer()
+    def describe_battery(self):
+        """Print a statement describing the battery size."""
+        print("This car has a " + str(self.battery_size) + "-KWh battery.")
+
+    def upgrade_battery(self):
+        if self.battery_size < 85:
+            self.battery_size = 85
+
+
+
+    
+class ElectricCar(Car):
+    """Represent aspects of a car, specific to electric vehicles."""
+    def __init__(self, make, model, year, battery=70):
+        """
+        Initialize attributes of the parent class.
+        Then initialize attributes specific to an electric car.
+        """
+        super().__init__(make, model, year)
+        self.battery = Battery(battery) # 用其他类的实例做属性
+
+    def fill_gas_tank(self):
+        print("This car doesn't need a gas tank!")
+
+    def get_range(self):
+        """Print a statement about the range this battery provides."""
+        if self.battery.battery_size == 70:
+            range = 240
+        elif self.battery.battery_size == 85:
+            range = 270
+        else:
+            range = 300
+
+        message = "This car can go approximately " + str(range)
+        message += " miles on a full charge."
+        print(message)
+
