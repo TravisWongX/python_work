@@ -595,3 +595,20 @@ favorite_languages['phil'] = 'python'
 from random import randint # 导入随机函数
 x = randint(1, 6)
 ```
+
+- 文件
+```python
+with open('pi_digits.txt') as file_object:
+    contents = file_object.read()
+    print(contents.rstrip()) # .rstrip()去掉最后的换行
+
+# open() 要使用文件就要打开文件，打开后返回一个文件对象存储到后面的变量中
+# with 在不需要访问文件后自动关闭文件
+# close() 也可关闭
+
+with open('text_files\filename.txt') as file_object: # 相对路径 relative path
+file_path = 'C:\Users\ehmatthes\other_files\text_files\filename.txt'
+with open(file_path) as file_object: # 绝对路径 absolute path
+
+
+```
