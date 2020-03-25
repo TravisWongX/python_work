@@ -611,4 +611,19 @@ file_path = 'C:\Users\ehmatthes\other_files\text_files\filename.txt'
 with open(file_path) as file_object: # 绝对路径 absolute path
 
 
+# 存储到列表
+filename = 'pi_digits.txt'
+
+with open(filename) as file_object:
+    lines = file_object.readlines()  # 是一个列表
+    # lines = file_object.readline() # readline 是逐个读字符
+
+for line in lines:
+    print(line.rstrip())
+
+# replace 替换
+message = "I really like dogs."
+message.replace('dog', 'cat') # dog 替换成 cat
+
+
 ```
