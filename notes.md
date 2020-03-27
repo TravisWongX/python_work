@@ -625,5 +625,16 @@ for line in lines:
 message = "I really like dogs."
 message.replace('dog', 'cat') # dog 替换成 cat
 
+# 写入文件
+filename = 'programming.txt'
 
+with open(filename, 'w') as file_object: # 如果不存在则创建
+    file_object.write("hurray!I love programming.\n") # 'w'模式，会先清空原有内容再写入
+    file_object.write("I love creating new games.\n") # 写入多行，要添加换行符
+
+
+with open(filename, 'a') as file_object: # 'a'为append模式，不会清空
+    -- snip --
+
+    
 ```
