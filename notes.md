@@ -636,5 +636,6 @@ with open(filename, 'w') as file_object: # 如果不存在则创建
 with open(filename, 'a') as file_object: # 'a'为append模式，不会清空
     -- snip --
 
-    
+with open(filename, 'w', encoding='utf8') as file_object: # 解决写入中文乱码
+    file_object.write(name)  
 ```
