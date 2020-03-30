@@ -639,3 +639,15 @@ with open(filename, 'a') as file_object: # 'a'为append模式，不会清空
 with open(filename, 'w', encoding='utf8') as file_object: # 解决写入中文乱码
     file_object.write(name)  
 ```
+
+- 异常 exception
+```python
+    try:
+        answer = int(first_number) / int(second_number)
+    except ZeroDivisionError:
+        print("You can't divide by 0!") # 遇到指定的异常则执行
+    else:
+        print(answer) # try成功则执行
+
+        
+```
