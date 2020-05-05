@@ -107,7 +107,7 @@ for magician in magicians:
     print(magician) # 缩进4空格不是必须的，缩进1个空格也不会报错
     print("I can't wait to see your next trick, " + magician.title() + ".\n") # 缩进要与上一句保持一致
 
-for value in range(1,6): # range()函数生成数字
+for value in range(1,6): # range()函数生成数字[1,6)
     print(value)
 # range(30)可以只给一个参数，表示
 numbers = list(range(1,6)) # list()函数生成数字列表
