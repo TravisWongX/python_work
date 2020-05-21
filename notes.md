@@ -698,3 +698,9 @@ def greet_user():
 greet_user()
 ```
 
+- 重构 refactoring
+```python
+# 将代码划分为一系列完成具体工作的函数。这样的过程被称为——重构
+
+```
+
